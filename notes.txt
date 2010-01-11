@@ -1,0 +1,6 @@
+PHP: Apache craters randomly...  Can't get it to create more than 260
+processes, either.
+
+Good "GC" is important: PHP, Erlang did this well
+
+
