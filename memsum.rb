@@ -33,6 +33,23 @@ end
 #puts memory_usage(matchexe("/usr/lib/erlang/erts-5.7.2/bin/beam.smp")).inspect
 
 #puts memory_usage(matchexe("/usr/sbin/apache2")).inspect
-puts memory_usage(matchexe("nginx")).inspect
+# puts memory_usage(matchexe("nginx")).inspect
 
+case ARGV[0]
+when "mochiweb"
+  cmd = "pgrep beam.smp"
+when "apache"
+  cmd = "pgrep apache2"
+when "nginx"
+  cmd = "pgrep nginx"
+when "jetty"
+  cmd = "pgrep jsvc"
+when "passenger"
+  cmd = "pgrep -f '^(Passenger|Rails)'"
+end
 
+pids = `#{cmd}`.split
+memusage = memory_usage(pids)
+
+puts "#{memusage[:cmd]} (vsz, rss)"
+puts "#{memusage[:vsz]}	#{memusage[:rss]}"
