@@ -1,0 +1,17 @@
+# I Used this virtual host for Django:
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@localhost
+    ServerName marginalmemory.casa
+
+    PythonPath "['/var/www/'] + sys.path"
+    <Location "/">
+     	SetHandler python-program
+     	PythonHandler django.core.handlers.modpython
+     	SetEnv DJANGO_SETTINGS_MODULE marginalmemory_django.settings
+     	PythonDebug On
+    </Location>
+
+    DocumentRoot /var/www/marginalmemory_django
+
+</VirtualHost>
