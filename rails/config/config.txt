@@ -1,0 +1,17 @@
+# This is the virtual host I used for Rails with Passenger:
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@localhost
+    ServerName marginalmemory.casa
+
+    DocumentRoot /var/www/marginalmemory-rails/public
+
+</VirtualHost>
+
+# And the Passenger conf:
+
+PassengerRoot /usr/lib/ruby/gems/1.8/gems/passenger-2.2.8
+PassengerRuby /usr/bin/ruby1.8
+PassengerMaxPoolSize 200
+PassengerStatThrottleRate 60
+
