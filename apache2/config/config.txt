@@ -1,0 +1,25 @@
+# Relevant bits of various apache configurations:
+
+# Used by PHP and Django:
+
+<IfModule mpm_prefork_module>
+    StartServers          1
+    MinSpareServers       2
+    MaxSpareServers      10
+    ServerLimit		1000
+    MaxClients          1000
+    MaxRequestsPerChild   0
+</IfModule>
+
+# Used by Passenger and the Apache test:
+
+<IfModule mpm_worker_module>
+    StartServers          1
+    MinSpareThreads      1
+    MaxSpareThreads      75
+    ThreadLimit          64
+    ThreadsPerChild      25
+    ServerLimit		1000
+    MaxClients          1000
+    MaxRequestsPerChild   0
+</IfModule>
