@@ -1,0 +1,113 @@
+10
+
+dir
+125
+http://mochiweb.googlecode.com/svn/trunk
+http://mochiweb.googlecode.com/svn
+
+
+
+2010-01-04T01:57:19.443269Z
+125
+bob.ippolito
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+583d1f64-3c3e-0410-8459-0f15fcd77d59
+
+priv
+dir
+
+LICENSE
+file
+
+
+
+
+2008-08-21T19:46:44.000000Z
+5e0144b1f4eb0e6001053e5e37e97db2
+2007-11-06T06:40:02.469198Z
+2
+matthew.dempsky
+
+include
+dir
+
+doc
+dir
+
+src
+dir
+
+scripts
+dir
+
+deps
+dir
+
+support
+dir
+
+ebin
+dir
+
+README
+file
+
+
+
+
+2008-08-21T19:46:44.000000Z
+9b8b48298c58b6c18cc6d9fbefcbe7cc
+2007-11-06T06:40:02.469198Z
+2
+matthew.dempsky
+
+Makefile
+file
+
+
+
+
+2010-01-06T21:26:04.909754Z
+b0473358c67815187f9e2617727ee0aa
+2010-01-02T20:31:31.454224Z
+117
+bob.ippolito
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+196
+
+examples
+dir
+
